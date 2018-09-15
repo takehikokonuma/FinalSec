@@ -12,7 +12,7 @@
 
         <div class="site-footer__col-two-three-group">
           <div class="site-footer__col-two">
-            <h3 class="headline headline--small">Explore</h3>
+            <h3 class="headline headline--small">企業情報</h3>
             <nav>
               <!-- <?php
               wp_nav_menu(array(
@@ -22,9 +22,9 @@
             -->
                   <ul class="nav-list min-list">
                     <li><a href="<?php echo site_url('/about-us') ?>">会社概要</a></li>
-                    <li><a href="#">サービス</a></li>
-                    <li><a href="#">コンタクト</a></li>
-            
+                    <li><a href="<?php echo site_url('/burmese-lessons'); ?>">サービス</a></li>
+                    <li><a href="<?php echo site_url('/contact'); ?>">問い合わせ先</a></li>
+
                   </ul>
             </nav>
           </div>
@@ -43,9 +43,9 @@
                 -->
           <nav>
                 <ul class="nav-list min-list">
-                  <li><a href="#">料金</a></li>
-                  <li><a href="<?php echo site_url('/privacy-policy') ?>">コンタクト</a></li>
-                  <li><a href="#">リクルート</a></li>
+                  <li><a href="#">hogehoge</a></li>
+                  <li><a href="<?php echo site_url('/contact') ?>">hogehoge</a></li>
+                  <li><a href="#">hogehoge</a></li>
                 </ul>
             </nav>
           </div>
@@ -57,9 +57,6 @@
             <ul class="min-list social-icons-list group">
               <li><a href="#" class="social-color-facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
               <li><a href="#" class="social-color-twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-              <li><a href="#" class="social-color-youtube"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
-              <li><a href="#" class="social-color-linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-              <li><a href="#" class="social-color-instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
             </ul>
           </nav>
         </div>

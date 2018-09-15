@@ -24,11 +24,10 @@
           ?>
         -->
           <ul class="min-list group">
-              <li <?php if (is_page('about-us') or wp_get_post_parent_id(0) == 13) echo 'class="current-menu-item"' ?>><a href="<?php echo site_url('/about-us') ?>">私達について</a></li>
-              <li><a href="#">ホーム</a></li>
+              <li><a href="/">ホーム</a></li>
               <li <?php if (get_post_type() == 'contact' OR is_page('contact')) echo 'class="current-menu-item"' ; ?>><a href="<?php echo site_url('/contact'); ?>">コンタクト</a></li>
-                <li <?php if (get_post_type() == 'recruitment' OR is_page('recruitment')) echo 'class="current-menu-item"' ; ?>><a href="<?php echo site_url('/recruitment'); ?>">リクルート</a></li>
-              <li <?php if (get_post_type() == 'post') echo 'class="current-menu-item"' ?>><a href="<?php echo site_url('/blog'); ?>">Blog</a></li>
+              <li <?php if (get_post_type() == 'recruitment' OR is_page('recruitment')) echo 'class="current-menu-item"' ; ?>><a href="<?php echo site_url('/recruitment'); ?>">リクルート</a></li>
+              <li <?php if (get_post_type() == 'burmese-lessons' OR is_page('burmese-lessons')) echo 'class="current-menu-item"' ; ?>><a href="<?php echo site_url('/burmese-lessons'); ?>">ミャンマー語レッスン</a></li>
           </ul>
         </nav>
         <div class="site-header__util">

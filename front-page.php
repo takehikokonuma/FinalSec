@@ -20,7 +20,7 @@
       <div class="container clearfix">
         <h3>お問い合わせ：<span>09-7777-41162</span> メール <span>hoeghoge@gmail.com</span></h3>
         <span>好きな時間帯にマンツーマンレッスンを受けられます</span>
-        <a href="#" class="button button-dark button-large button-rounded">料金プランを見る</a>
+        <a href="<?php echo site_url('/burmese-lessons'); ?>" class="button button-dark button-large button-rounded">レッスン内容を見る</a>
       </div>
     </div>
 
@@ -175,7 +175,7 @@
                       <div>
                         <h3 class="uppercase" style="font-weight: 600;">ミャンマー語</h3>
                         <p style="line-height: 1.8;">ミャンマー語burmesミャンマー語burmesミャンマー語burmesミャンマー語burmesミャンマー語burmesミャンマー語burmesミャンマー語burmesミャンマー語burmesミャンマー語burmese</p>
-                        <a href="#" class="button button-border button-light button-rounded uppercase nomargin">更に詳しく</a>
+                        <a href="<?php echo site_url('/burmese-lessons'); ?>" class="button button-border button-light button-rounded uppercase nomargin">更に詳しく</a>
                           <i class="fa fa-globe bgicon"></i>
                       </div>
                     </div>

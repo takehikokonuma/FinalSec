@@ -2508,17 +2508,6 @@ body:not(.device-touch) .team-overlay {
 
 
 
-/*-----------------------------------------------------------------------------------
-
-	Theme Name: Canvas
-	Theme URI: http://themes.semicolonweb.com/html/canvas
-	Description: The Multi-Purpose Template
-	Author: SemiColonWeb
-	Author URI: http://themeforest.net/user/semicolonweb
-	Version: 5.2.1
-
------------------------------------------------------------------------------------*/
-
 /* ----------------------------------------------------------------
 
 	- Basic
@@ -12137,11 +12126,13 @@ body:not(.device-touch) .clients-grid li a {
 .testi-image img { border-radius: 50%; }
 
 .testi-content {
+  color:white;
 	position: relative;
 	overflow: hidden;
 }
 
 .testi-content p {
+  color: white   !important;
 	margin-bottom: 0;
 	font-family: 'Crete Round', serif;
 	font-style: italic;
