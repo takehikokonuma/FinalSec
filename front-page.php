@@ -5,8 +5,8 @@
     <div class="page-banner__content container t-center c-white">
       <h1 class="headline headline--large">Bon Voyage!</h1>
       <h2 class="headline headline--medium">好きな時・好きな場所でミャンマー語学習！</h2>
-      <h3 class="headline headline--small">Why don&rsquo;t you check out the <strong>major</strong> you&rsquo;re interested in?</h3>
-      <a href="#" class="btn btn--large btn--blue">Find Your Major</a>
+      <h3 class="headline headline--small">少数精鋭の先生たちと<strong>マンツーマンレッスン</strong> をしてみませんか?</h3>
+      <a href="#" class="btn btn--large btn--blue">教科書を覗く</a>
     </div>
   </div>
 
@@ -18,9 +18,9 @@
 
     <div class="promo promo-light promo-full bottommargin-lg header-stick notopborder">
       <div class="container clearfix">
-        <h3>Call us today at <span>+91.22.57412541</span> or Email us at <span>support@canvas.com</span></h3>
-        <span>We strive to provide Our Customers with Top Notch Support to make their Theme Experience Wonderful</span>
-        <a href="#" class="button button-dark button-large button-rounded">Start Browsing</a>
+        <h3>お問い合わせ：<span>09-7777-41162</span> メール <span>hoeghoge@gmail.com</span></h3>
+        <span>好きな時間帯にマンツーマンレッスンを受けられます</span>
+        <a href="#" class="button button-dark button-large button-rounded">料金プランを見る</a>
       </div>
     </div>
 
@@ -69,206 +69,181 @@
     </div>
   </section>
 
-          <div class="container">
+  <!-- teachers info
+  ============================================= -->
 
-                      <div class="fancy-title title-border">
-                        <h3>Wordcrews 講師陣</h3>
-                      </div>
+      <div class="container">
 
-                      <div class="row">
-
-                        <div class="col-lg-3 col-md-6 bottommargin1">
-
-                          <div class="team">
-                            <div class="team-image">
-                                <img src='wp-content/themes/FinalSec-master/images/tutorpic1.jpg' alt="takehiko">
-                            </div>
-                            <div class="team-desc">
-                              <div class="team-title"><h4>John Doe</h4><span>CEO</span></div>
-                            </div>
-                          </div>
-
-                        </div>
-
-                        <div class="col-lg-3 col-md-6 bottommargin">
-
-                          <div class="team">
-                            <div class="team-image">
-                              <img src='wp-content/themes/FinalSec-master/images/3.jpg' alt="takehiko">
-                            </div>
-                            <div class="team-desc">
-                              <div class="team-title"><h4>Josh Clark</h4><span>Co-Founder</span></div>
-                            </div>
-                          </div>
-
-                        </div>
-
-                        <div class="col-lg-3 col-md-6 bottommargin">
-
-                          <div class="team">
-                            <div class="team-image">
-                                <img src='wp-content/themes/FinalSec-master/images/3.jpg' alt="takehiko">
-                            </div>
-                            <div class="team-desc">
-                              <div class="team-title"><h4>Mary Jane</h4><span>Sales</span></div>
-                            </div>
-                          </div>
-
-                        </div>
-
-                        <div class="col-lg-3 col-md-6 bottommargin">
-
-                          <div class="team">
-                            <div class="team-image">
-                              <img src='wp-content/themes/FinalSec-master/images/3.jpg' alt="takehiko">
-                            </div>
-                            <div class="team-desc">
-                              <div class="team-title"><h4>Nix Maxwell</h4><span>Support</span></div>
-                            </div>
-                          </div>
-
-                        </div>
-
-                      </div>
-                  </div>
-
-
-
-
-  <div class="full-width-split group">
-    <div class="full-width-split__one">
-      <div class="full-width-split__inner">
-        <h2 class="headline headline--small-plus t-center">Upcoming Events</h2>
-
-          <?php
-          $today = date('Ymd');
-          $homepageEvents = new WP_Query(array(
-
-            'posts_per_page' => 2,
-            'post_type' => 'event',
-            'meta_key' => 'event_date',
-            'orderby' => 'meta_value_num',
-            'order' => 'ASC',
-            'meta_query' => array(
-              array(
-                'key' => 'event_date',
-                'compare' => '>=',
-                'value' => $today,
-                'type' => 'numeric'
-              )
-            )
-          ));
-
-          while ($homepageEvents->have_posts()) {
-            $homepageEvents->the_post(); ?>
-            <div class="event-summary">
-              <a class="event-summary__date t-center" href="#">
-                <span class="event-summary__month"><?php
-                $eventDate = new DateTime(get_field('event_date'));
-                echo $eventDate->format('M') ?>
-                </span>
-                <span class="event-summary__day"><?php echo $eventDate->format('d')
-                ?></span>
-              </a>
-              <div class="event-summary__content">
-                <h5 class="event-summary__title headline headline--tiny">
-                  <a href="<?php the_permalink(); ?>">
-                  <?php the_title(); ?></a></h5>
-                <p><?php if (has_excerpt()) {
-                  echo get_the_excerpt();
-                } else {
-                  echo wp_trim_words(get_the_content(), 18);
-                } ?><a href="<?php the_permalink(); ?>" class="nu gray">Learn more</a></p>
-              </div>
+            <div class="fancy-title title-border">
+              <h3>Wordcrews 講師陣</h3>
+              <h5>*一部</h5>
             </div>
-          <?php }
-          ?>
 
-        <p class="t-center no-margin"><a href="<?php echo get_post_type_archive_link('event') ?>" class="btn btn--blue">View All Events</a></p>
+            <div class="row">
 
-      </div>
-    </div>
-    <div class="full-width-split__two">
-      <div class="full-width-split__inner">
-        <h2 class="headline headline--small-plus t-center">From Our Blogs</h2>
+              <div class="col-lg-3 col-md-6 bottommargin1">
 
-        <?php
-        $homepagePosts = new WP_Query(array(
-          'posts_per_page' => 2
-        ));
+                <div class="team">
+                  <div class="team-image">
+                      <img src='wp-content/themes/FinalSec-master/images/tutorpic1.jpg' alt="takehiko">
+                  </div>
+                  <div class="team-desc">
+                    <div class="team-title"><h4>tomo</h4><span>英語</span></div>
+                  </div>
+                </div>
 
-          while ($homepagePosts->have_posts()) {
-            $homepagePosts->the_post(); ?>
-                    <div class="event-summary">
-                      <a class="event-summary__date event-summary__date--beige t-center" href="<?php the_permalink(); ?>">
-                        <span class="event-summary__month"><?php the_time('M'); ?></span>
-                        <span class="event-summary__day"><?php the_time('d'); ?></span>
-                      </a>
-                      <div class="event-summary__content">
-                        <h5 class="event-summary__title headline headline--tiny"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
-                        <p><?php if (has_excerpt()) {
-                          echo get_the_excerpt();
-                        } else {
-                          echo wp_trim_words(get_the_content(), 18);
-                        } ?> <a href="<?php the_permalink(); ?>" class="nu gray">Read more</a></p>
+              </div>
+
+              <div class="col-lg-3 col-md-6 bottommargin">
+
+                <div class="team">
+                  <div class="team-image">
+                    <img src='wp-content/themes/FinalSec-master/images/tutorpic2.jpg' alt="takehiko">
+                  </div>
+                  <div class="team-desc">
+                    <div class="team-title"><h4>takehiko</h4><span>ミャンマー語専門</span></div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="col-lg-3 col-md-6 bottommargin">
+
+                <div class="team">
+                  <div class="team-image">
+                      <img src='wp-content/themes/FinalSec-master/images/tutorpic3.jpg' alt="takehiko">
+                  </div>
+                  <div class="team-desc">
+                    <div class="team-title"><h4>namae</h4><span>ミャンマー語専門</span></div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="col-lg-3 col-md-6 bottommargin">
+
+                <div class="team">
+                  <div class="team-image">
+                    <img src='wp-content/themes/FinalSec-master/images/tutorpic3.jpg' alt="takehiko">
+                  </div>
+                  <div class="team-desc">
+                    <div class="team-title"><h4>takehiko</h4><span>イケメン代表</span></div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+        </div>
+
+  <!-- サービス
+        ============================================= -->
+
+              <div class="container clearfix">
+                <div class="fancy-title title-border">
+                   <h3>Wordcrewsのサービス</h3>
+                </div>
+              </div>
+
+                  <div class="section parallax nobottommargin noborder dark" style="height: 450px; padding: 120px 0;">
+
+                    <div class="vertical-middle center" style="z-index: 2;">
+                        <div class="page-banner__bg-image" style="background-image: url(<?php echo get_theme_file_uri('/images/coverpic3.jpg') ?>);"></div>
+                      <div class="container clearfix" data-animate="fadeInUp">
+                        <div class="heading-block nobottomborder nobottommargin">
+                          <h2 style="font-size: 42px;">少数精鋭の講師陣</h2>
+                          <span class="d-none d-lg-block"><p>倍率✗倍をくぐり抜け、hogehogehog
+                            hogehogehogehogehogehogee</p></span></div>
+                        <a href="#" class="button button-border button-rounded button-white button-light button-large noleftmargin nobottommargin" style="margin-top: 40px;">Show More</a>
                       </div>
                     </div>
-            <?php } wp_reset_postdata();
-          ?>
 
-        <p class="t-center no-margin"><a href="<?php echo site_url('/blog'); ?>" class="btn btn--yellow">View All Blog Posts</a></p>
-      </div>
-    </div>
-  </div>
+                  </div>
 
- <br>
+                  <div class="row bottommargin-lg common-height">
 
-    <h2 class="uppercase center"><span>お客様</span> の声</h2>
+                    <div class="col-lg-4 dark col-padding ohidden" style="background-color: #1abc9c;">
+                      <div>
+                        <h3 class="uppercase" style="font-weight: 600;">英語講師派遣</h3>
+                        <p style="line-height: 1.8;">英語英語english英語英語english英語英語english英語英語english英語英語english英語英語english英語英語english英語英語english英語英語english</p>
+                        <a href="#" class="button button-border button-light button-rounded button-reveal tright uppercase nomargin"><i class="icon-angle-right"></i><span>更に詳しく</span></a>
+                        <i class="fa fa-globe bgicon"></i>
+                      </div>
+                    </div>
 
-  <div class="hero-slider">
-    <div class="hero-slider__slide" style="background-image: url(<?php echo get_theme_file_uri('/images/ocean.jpg') ?>);">
-      <div class="hero-slider__interior container">
-        <div class="testi-image">
-          <a href="#">  <img src='wp-content/themes/FinalSec-master/images/tutorpic1.jpg' alt="takehiko"></a>
+                    <div class="col-lg-4 dark col-padding ohidden" style="background-color: #34495e;">
+                      <div>
+                        <h3 class="uppercase" style="font-weight: 600;">ミャンマー語</h3>
+                        <p style="line-height: 1.8;">ミャンマー語burmesミャンマー語burmesミャンマー語burmesミャンマー語burmesミャンマー語burmesミャンマー語burmesミャンマー語burmesミャンマー語burmesミャンマー語burmese</p>
+                        <a href="#" class="button button-border button-light button-rounded uppercase nomargin">更に詳しく</a>
+                          <i class="fa fa-globe bgicon"></i>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-4 dark col-padding ohidden" style="background-color: #e74c3c;">
+                      <div>
+                        <h3 class="uppercase" style="font-weight: 600;">企業向け語学研修</h3>
+                        <p style="line-height: 1.8;">企業向けに語学研修language/p>
+                        <a href="#" class="button button-border button-light button-rounded uppercase nomargin">更に詳しく</a>
+                          <i class="fa fa-globe bgicon"></i>
+                      </div>
+                    </div>
+
+                  </div>
+
+<!-- お客さんの声
+                  ============================================= -->
+       <div class="container clearfix">
+         <div class="fancy-title title-border">
+      <h3>お客様の声</h3>
+         </div>
+         </div>
+
+        <div class="hero-slider">
+          <div class="hero-slider__slide" style="background-image: url(<?php echo get_theme_file_uri('/images/ocean.jpg') ?>);">
+            <div class="hero-slider__interior container">
+              <div class="testi-image">
+                <a href="#">  <img src='wp-content/themes/FinalSec-master/images/tutorpic1.jpg' alt="takehiko"></a>
+              </div>
+              <div class="testi-content">
+                <p>Myanwaveの家庭教師サービスを使い始めてから、もうすぐ1年が経過します。最初は慣れていないということもあり、色々と苦労した場面もありましたが、家庭教師と学習したことを日常生活で使うことよって、当初に比べて日常生活での会話がかなり楽になりました。今後も実践的なミャンマー語をさらに学習していこうと思います。</p>
+                <div class="testi-meta">
+                  Y.K
+                  <span>フリーランス</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="hero-slider__slide" style="background-image: url(<?php echo get_theme_file_uri('/images/ocean.jpg') ?>);">
+          <div class="hero-slider__interior container">
+            <div class="testi-image">
+              <a href="#">  <img src='wp-content/themes/FinalSec-master/images/tutorpic1.jpg' alt="takehiko"></a>
+            </div>
+            <div class="testi-content">
+              <p>Myanwaveの家庭教師は非常に熱心でわかり易い授業をしてくれます。私の講師は、優しい方ですが、時には厳しく接してくれ、仕事で忙しい時でもモチベーションを常に高い状態で学習出来ています。講師との努力の甲斐があり、3ヶ月ほどで日常会話のベーシックを学習できました。現在は、会話の練習をしつつ、読み書きに挑戦しています。</p>
+              <div class="testi-meta">
+                T.K
+                <span>Opengate Inc.</span>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="testi-content">
-          <p>Myanwaveの家庭教師サービスを使い始めてから、もうすぐ1年が経過します。最初は慣れていないということもあり、色々と苦労した場面もありましたが、家庭教師と学習したことを日常生活で使うことよって、当初に比べて日常生活での会話がかなり楽になりました。今後も実践的なミャンマー語をさらに学習していこうと思います。</p>
-          <div class="testi-meta">
-            Y.K
-            <span>フリーランス</span>
+        <div class="hero-slider__slide" style="background-image: url(<?php echo get_theme_file_uri('/images/ocean.jpg') ?>);">
+          <div class="hero-slider__interior container">
+            <div class="testi-image">
+              <a href="#">  <img src='wp-content/themes/FinalSec-master/images/tutorpic1.jpg' alt="takehiko"></a>
+            </div>
+            <div class="testi-content">
+              <p>Myanwave家庭教師にはいつも良くしてもらっています。私の先生は、非常に優秀で教えるのが上手で、学習プロセスなど色々アドバイスをいただけます。CHARMYAの家庭教師を初めてから、ミャンマー語も徐々に上達し、何よりも自信がついため、どんどん日常会話を練習し、将来的には、ミャンマー語検定にも挑戦してみたいと思っています。</p>
+              <div class="testi-meta">
+                T.K
+                <span>Opengate Inc.</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  <div class="hero-slider__slide" style="background-image: url(<?php echo get_theme_file_uri('/images/ocean.jpg') ?>);">
-    <div class="hero-slider__interior container">
-      <div class="testi-image">
-        <a href="#">  <img src='wp-content/themes/FinalSec-master/images/tutorpic1.jpg' alt="takehiko"></a>
-      </div>
-      <div class="testi-content">
-        <p>Myanwaveの家庭教師は非常に熱心でわかり易い授業をしてくれます。私の講師は、優しい方ですが、時には厳しく接してくれ、仕事で忙しい時でもモチベーションを常に高い状態で学習出来ています。講師との努力の甲斐があり、3ヶ月ほどで日常会話のベーシックを学習できました。現在は、会話の練習をしつつ、読み書きに挑戦しています。</p>
-        <div class="testi-meta">
-          T.K
-          <span>Opengate Inc.</span>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="hero-slider__slide" style="background-image: url(<?php echo get_theme_file_uri('/images/ocean.jpg') ?>);">
-    <div class="hero-slider__interior container">
-      <div class="testi-image">
-        <a href="#">  <img src='wp-content/themes/FinalSec-master/images/tutorpic1.jpg' alt="takehiko"></a>
-      </div>
-      <div class="testi-content">
-        <p>Myanwave家庭教師にはいつも良くしてもらっています。私の先生は、非常に優秀で教えるのが上手で、学習プロセスなど色々アドバイスをいただけます。CHARMYAの家庭教師を初めてから、ミャンマー語も徐々に上達し、何よりも自信がついため、どんどん日常会話を練習し、将来的には、ミャンマー語検定にも挑戦してみたいと思っています。</p>
-        <div class="testi-meta">
-          T.K
-          <span>Opengate Inc.</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+
 
   <?php get_footer();
 

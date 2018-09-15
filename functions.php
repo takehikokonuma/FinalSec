@@ -9,12 +9,13 @@ function university_files() {
   wp_enqueue_style("bootstrap_css", "//stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css");
   wp_enqueue_style('main-style', get_stylesheet_uri() );
 
+
 }
 
 
+
+
 add_action('wp_enqueue_scripts', 'university_files');
-
-
 
 /* これで、タグにタイトルが表示される*/
 function university_features() {

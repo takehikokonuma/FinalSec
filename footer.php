@@ -8,7 +8,7 @@
           <h1 class="school-logo-text school-logo-text--alt-color"><a href="<?php echo site_url() ?>"><strong>Word</strong>crews</a></h1>
           <p><a class="site-footer__link" href="#">住所：No.401 Tower-C, Pearl Condo, the corner of Kabar Aye Pagoda and Sayar San roads, Bahan township, Yangon, Myanmar</a></p>
         </div>
-        
+
 
         <div class="site-footer__col-two-three-group">
           <div class="site-footer__col-two">
@@ -21,16 +21,19 @@
               ?>
             -->
                   <ul class="nav-list min-list">
-                    <li><a href="<?php echo site_url('/about-us') ?>">About Us</a></li>
-                    <li><a href="#">Programs</a></li>
-                    <li><a href="#">Events</a></li>
-                    <li><a href="#">Campuses</a></li>
+                    <li><a href="<?php echo site_url('/about-us') ?>">会社概要</a></li>
+                    <li><a href="#">サービス</a></li>
+                    <li><a href="#">コンタクト</a></li>
+            
                   </ul>
             </nav>
           </div>
 
+
+
           <div class="site-footer__col-three">
-            <h3 class="headline headline--small">Learn</h3>
+            <h3 class="headline headline--small">参考情報</h3>
+
                 <!-- WPでいじるメニュ
                  <?php
                   wp_nav_menu(array(
@@ -38,18 +41,18 @@
                   ))
                   ?>
                 -->
-            <nav>
+          <nav>
                 <ul class="nav-list min-list">
-                  <li><a href="#">Legal</a></li>
-                  <li><a href="<?php echo site_url('/privacy-policy') ?>">Privacy</a></li>
-                  <li><a href="#">Careers</a></li>
+                  <li><a href="#">料金</a></li>
+                  <li><a href="<?php echo site_url('/privacy-policy') ?>">コンタクト</a></li>
+                  <li><a href="#">リクルート</a></li>
                 </ul>
             </nav>
           </div>
         </div>
 
         <div class="site-footer__col-four">
-          <h3 class="headline headline--small">Connect With Us</h3>
+          <h3 class="headline headline--small">SNSでチェックする</h3>
           <nav>
             <ul class="min-list social-icons-list group">
               <li><a href="#" class="social-color-facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
